@@ -22,3 +22,5 @@ Bei einem B-Baum werden die Elemente den Schlüssel nach geordnet. Diese Schlüs
 Beispiel:  
 
 Ein Baum ist von der Ordnung 5. Der Baum kann also Knoten von 5-10 haben. Die Wurzel kann den Schlüssel von 1-10 haben.  
+
+Test123
