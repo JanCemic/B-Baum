@@ -2,7 +2,7 @@
 
 Binäre Bäume 
 
-Bevor man versteht was ein B-Baum ist, muss man zuerst einmal verstehen was ein Binärer Baum ist. Ein binärer Baum ist eine Datenstruktur, bei der ein Element zwei Nachfolger hat. Diese Elemente nennt man Knoten. Sind beide Nachfolger eines Knotens NULL (wenn es keine gibt), nennt man dies Blatt. Den ersten Knoten nennt man Wurzel. 
+Bevor man versteht was ein B-Baum ist, muss man zuerst einmal verstehen was ein Binärer Baum ist. Ein binärer Baum ist eine Datenstruktur zum Ordnen von Werten, bei der ein Element zwei Nachfolger hat. Diese Elemente nennt man Knoten. Sind beide Nachfolger eines Knotens NULL (wenn es keine gibt), nennt man dies Blatt. Den ersten Knoten nennt man Wurzel. 
 
 Man unterscheidet zwischen: 
 
