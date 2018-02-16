@@ -2,11 +2,23 @@
 
 Binäre Bäume 
 
-Bevor man versteht was ein B-Baum ist, muss man zuerst einmal verstehen was ein Binärer Baum ist. Ein binärer Baum ist eine Datenstruktur zum Ordnen von Werten, bei der ein Element zwei Nachfolger hat. Diese Elemente nennt man Knoten. Sind beide Nachfolger eines Knotens NULL (wenn es keine gibt), nennt man dies Blatt. Den ersten Knoten nennt man Wurzel. 
+Bevor man versteht was ein B-Baum ist, muss man zuerst einmal verstehen was ein Binärer Baum ist. Ein binärer Baum ist eine Datenstruktur zum Ordnen von Werten. Diese Werte nennt man Knoten. Die Knoten sind untereinander alle mit nur einem Weg verbunden. Ein Knoten kann höchstens zwei nachfolgende Knoten haben. Sind beide Nachfolger eines Knotens NULL (wenn es keine gibt), nennt man dies Blatt. Den ersten Knoten nennt man Wurzel. Die Verbindungen nennt man Verzweigungen. Die Anzahl der Element lässt sich mit 2n  -1 berechnen. Wobei n für die Tiefe stehet. Die Tiefe ist die Anzahl der Konten bis zum Ende. 
+
+Um einen Knoten zu suchen geht man folgendermaßen vor: 
+
+Ist die Wurzel größer als das zu suchende Element, dann wandert das Element nach rechts, wenn es kleiner ist nach links. Solange bis man das Element gefunden hat.  
+
+Um einen Knoten einzufügen geht man folgendermaßen vor: 
+
+Man sucht den Knoten der dem Wert am nächsten kommt. Ist dieser größer als der Knoten wird eine Verzweigung nach rechts erstellt und ein neuer Knoten mit diesem Wert wird erstellt, wenn er kleiner ist nach links. 
+
+Um einen Knoten zu löschen geht man folgendermaßen vor: 
+
+Der Knoten wird gesucht. Ist er gefunden und hat kein Kind wird er einfach gelöscht. Hat er ein Kind wird er gelöscht und eine Verzweigung vom vorigen Knoten wird zum Kind erstellt. Hat er zwei Kinder wird der Knoten gelöscht, eine Verzweigung zu seine rechten Kind erstellt und von diesem eine Verzweigung zu dem linken Kind.  
 
 Man unterscheidet zwischen: 
 
-Ausgeglichenen Bäumem 
+Ausgeglichenen Bäume 
 
 Der Baum ist ausgeglichen, wenn sich die Stufenhöhe beider Seiten höchstens nur um eins unterscheiden. 
 
