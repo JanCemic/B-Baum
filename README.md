@@ -59,3 +59,32 @@ Ordnung des B-Baums:
 5. Sind S1, S2, ..., Sk mit m  k  2m die Schlüssel eines Knotens x, dann sind alle Schlüssel des 1. (d.h. kleinsten) Sohnes von x kleiner als S1, alle Schlüssel des (k+1)-ten Sohnes größer als Sk und alle Schlüssel des i-ten Sohnes mit 1 < i < k+1 größer als Si-1 und kleiner als Si. Als kleinsten Sohn bezeichnen wir im folgenden den am weitesten links stehenden, direkten Sohnknoten.
 
 -Bei effizienter Implementierung ist die Speicherausnutzung >50% (wegen 1 und 2)
+
+
+
+B-Baum
+•	Neben dem B-Baum, gibt es auch noch den B+-Baum und den B*-Baum.
+
+Unterschied zu Binärbäumen:
+•	B-Bäume haben mehr Einträge in den Knoten
+•	Verzweigen sich nicht binär, sondern vielfach
+•	So erhält man eine geringe Höhe bei den Strukturen welche mit einer geringen Anzahl an Plattenzugriffen auskommen.
+
+•	Jeder Knoten erhält maximal 2n Elemente (Schlüssel)
+  o	Elemente in den Knoten sind sortiert
+•	Jeder Knoten muss mindestens n Elemente enthalten, dies gilt aber nicht für die Wurzel
+•	Knoten, ohne Nachfolger, nennt man Blätter. Diese liegen auf der letzten Ebene, diese bestimmen gleichzeitig die Höhe des Baumes. Blätter erhalten keine Verweise
+•	Der Weg von der Wurzel zu einem Blatt ist immer gleich lang
+
+B*-Bäume:
+•	Unterschied zum B-Baum:
+o	Knoten müssen zu 2/3 gefüllt sein und nicht mehr nur zu 50%
+
+B+Bäume:
+•	Auch „hohlen Baum“ genannt
+•	Alle Datensätze liegen in den Blättern
+•	Wege von der Wurzel zu den Blättern bleiben dennoch gleichlang
+•	Blattknoten sind miteinander verknüpft, ähneln einer verketteten Liste
+•	Eignet sich gut zur sequentiellen Abarbeitung
+•	Um einen gesuchten Wert zu finden, muss man nun durch die Indizes bis zur Blattebene vordringen, wobei die Werte im Indexbereich keine Rolle spielen, da man den vollen Datensatz nur auf der Blattebene findet.
+
