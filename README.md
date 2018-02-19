@@ -2,7 +2,7 @@
 
 Binäre Bäume 
 
-Bevor man versteht was ein B-Baum ist, muss man zuerst einmal verstehen was ein Binärer Baum ist. Ein binärer Baum ist eine Datenstruktur zum Ordnen von Werten. Diese Werte nennt man Knoten. Die Knoten sind untereinander alle mit nur einem Weg verbunden. Ein Knoten kann höchstens zwei nachfolgende Knoten haben. Sind beide Nachfolger eines Knotens NULL (wenn es keine gibt), nennt man dies Blatt. Den ersten Knoten nennt man Wurzel. Die Verbindungen nennt man Verzweigungen. Die Anzahl der Element lässt sich mit 2n  -1 berechnen. Wobei n für die Tiefe stehet. Die Tiefe ist die Anzahl der Konten bis zum Ende. 
+Bevor man versteht was ein B-Baum ist, muss man zuerst einmal verstehen was ein Binärer Baum ist. Ein binärer Baum ist eine Datenstruktur zum Ordnen von Werten. Diese Werte nennt man Knoten. Die Knoten sind untereinander alle mit nur einem Weg verbunden. Ein Knoten kann höchstens zwei nachfolgende Knoten haben. Sind beide Nachfolger eines Knotens NULL (wenn es keine gibt), nennt man dies Blatt. Den ersten Knoten nennt man Wurzel. Die Verbindungen nennt man Verzweigungen. Die Anzahl der Element lässt sich mit 2n  -1 berechnen. Wobei n für die Tiefe steht. Die Tiefe ist die Anzahl der Konten bis zum Ende. 
 
 Um einen Knoten zu suchen geht man folgendermaßen vor: 
 
@@ -48,14 +48,14 @@ B-Bäume
 -Effizienz von Zugriffen auf externe Speicher erhöht
 -Werden auch eingesetzt wenn nur die Blattebenen auf dem externen Speicher sind
 -Dabei sind auf dem Hauptknoten aber nur Schlüssel und keine Informationen
-- Das B steht für balanced
+- Das 'B' steht für balanced
 
 Ordnung des B-Baums:
 
-1.	Bis auf die Wurzel, hat jeder Knoten einen m Schlüssel
-2.	 Ein Knoten kann höchstens 2 m Schlüssel besitzen
-3.	Ein Knoten mit k Schlüsseln, der nicht Blatt ist, besitzt genau k+1 Söhne
-4.	Alle Blätter stehen auf der gleichen Stufe
-5.	Sind S1, S2, ..., Sk mit m  k  2m die Schlüssel eines Knotens x, dann sind alle Schlüssel des 1. (d.h. kleinsten) Sohnes von x kleiner als S1, alle Schlüssel des (k+1)-ten Sohnes größer als Sk und alle Schlüssel des i-ten Sohnes mit 1 < i < k+1 größer als Si-1 und kleiner als Si. Als kleinsten Sohn bezeichnen wir im folgenden den am weitesten links stehenden, direkten Sohnknoten.
+1. Bis auf die Wurzel, hat jeder Knoten einen m Schlüssel
+2. Ein Knoten kann höchstens 2 m Schlüssel besitzen
+3. Ein Knoten mit k Schlüsseln, der nicht Blatt ist, besitzt genau k+1 Söhne
+4. Alle Blätter stehen auf der gleichen Stufe
+5. Sind S1, S2, ..., Sk mit m  k  2m die Schlüssel eines Knotens x, dann sind alle Schlüssel des 1. (d.h. kleinsten) Sohnes von x kleiner als S1, alle Schlüssel des (k+1)-ten Sohnes größer als Sk und alle Schlüssel des i-ten Sohnes mit 1 < i < k+1 größer als Si-1 und kleiner als Si. Als kleinsten Sohn bezeichnen wir im folgenden den am weitesten links stehenden, direkten Sohnknoten.
 
 -Bei effizienter Implementierung ist die Speicherausnutzung >50% (wegen 1 und 2)
